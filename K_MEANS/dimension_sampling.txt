@@ -1,0 +1,12 @@
+
+
+Dimensions         Iterations    Computation Time     Dim
+9                  35                                 0
+8                  31                                 0
+7                  93                                 3
+6                  239                                3
+5                  44                                 3
+4                  30                                 0
+3                  49                                 4                              
+2                  168                                3
+1                  33                                 0
