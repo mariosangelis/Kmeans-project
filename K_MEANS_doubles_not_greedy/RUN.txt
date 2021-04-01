@@ -1,0 +1,14 @@
+#just prints information on how to run the program:
+./seq_main
+
+#big problem in binary, 0.001 threshold(we play here with different thresholds):
+./seq_main -o -t 0.0005 -b -n 1000 -i Image_data/color17695.bin
+
+#small txt problem,(default threshold 0.001), 3 clusters and debug info(-d):
+./seq_main -o -d -n 3 -i Image_data/myinput/small.txt
+
+
+#make diff and find the number of differences
+diff -U 0 Image_data/color17695.bin.membership Image_data/color17695.bin.starting_threshold
+diff -U 0 Image_data/color17695.bin.membership Image_data/color17695.bin.starting_threshold | grep -v ^@ | wc -l
+
